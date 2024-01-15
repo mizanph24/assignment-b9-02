@@ -141,6 +141,7 @@ form > input[type=text] , select , button{
     outline: 0;
 
 }
+/* Our Popular Tours */
 .popular-tour-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -206,5 +207,13 @@ form > input[type=text] , select , button{
     form > input[type=text] , select , button{
         width: 100%;
            
+    }
+    /* Our Popular Tours */
+    .popular-tour-content{
+        width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        
     }
 }
