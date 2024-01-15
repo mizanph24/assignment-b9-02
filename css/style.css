@@ -191,6 +191,55 @@ form > input[type=text] , select , button{
 .choose-us-card-item:hover{
     background-color: #29cdf618;
 }
+/* newsletter */
+.newsletter{
+    display: flex;
+    gap: 50px ;
+    flex-direction: row;
+
+}
+
+.newsletter .newsletter-form{
+    width: 40%;
+    padding: 10px 30px;
+    border: 1px solid #FF5400;
+    border-radius: 8px;
+}
+.newsletter .newsletter-form > input{
+    padding: 20px 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.newsletter .newsletter-form > button{
+    width: 100%;
+    margin-top: 20px;
+}
+.newsletter .newsletter-image{
+    width: 60%;
+    position: relative;
+}
+.newsletter .newsletter-image img{
+    width: 100%;
+    height: 100%;
+}
+.newsletter .newsletter-image .saveup{
+    width: 200px;
+    background-color: #FF5400;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px 0 ;
+    position: absolute;
+    bottom: 41px;
+    right: 8px;
+    transform: rotate(-23deg);
+}
+
+
 /* Responsive */
 @media screen and (max-width:600px) {
 
@@ -259,5 +308,24 @@ form > input[type=text] , select , button{
 .choose-us-card-item{
     width: 100%;
     padding: 20px 40px;
+}
+
+/* newsletter */
+.newsletter{
+    display: flex;
+    gap: 50px ;
+    flex-direction: column;
+    
+}
+.newsletter .newsletter-form{
+    width: 90%;
+    margin: auto;
+    padding: 10px 30px;
+    
+}
+.newsletter .newsletter-image{
+    width: 90%;
+    margin: auto;
+    
 }
 }
