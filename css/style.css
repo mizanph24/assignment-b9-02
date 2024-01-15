@@ -22,9 +22,10 @@ header, main{
 
 }
 .section-sub-title{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin: 10px 0;
+
 }
 
 .section-description{
@@ -32,6 +33,7 @@ header, main{
     font-size: 13px;
     font-weight: 400;
     line-height: 26px; 
+    margin: 10px 0;
 }
 .btn-primary{
     border-radius: 8px;
@@ -165,6 +167,30 @@ form > input[type=text] , select , button{
     margin-top: 30px;
 }
 
+/* Why Choose Us */
+.choose-us-text{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.choose-us-card-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.choose-us-card-item{
+    width: 45%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 15px;
+}
+.choose-us-card-item:hover{
+    background-color: #29cdf618;
+}
 /* Responsive */
 @media screen and (max-width:600px) {
 
@@ -216,4 +242,22 @@ form > input[type=text] , select , button{
         gap: 50px;
         
     }
+
+/* Why Choose Us */
+.choose-us-text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.choose-us-card-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.choose-us-card-item{
+    width: 100%;
+    padding: 20px 40px;
+}
 }
