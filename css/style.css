@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    color: #131318;
+}
+header, main{
+    width: 992px;
+    margin: auto;
+    border: 1px solid black;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.section-sub-title{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.section-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* navbar  CSS*/
+.nav-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo > h2{
+    font-size: 36px;
+    font-weight: 800;
+    
+}
+.logo > h2 > span{
+    color: #FF5400;
+}
+
+.menu-area > ul{
+    display: flex;
+    gap: 40px;
+}
+.menu-area > ul li{
+    list-style: none;
+    text-decoration: none;
+    }
+.menu-area > ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.menu-area > ul a:hover{
+    color: #FF5400;
+    /* font-weight: bold; */
+}
+
+
+/*  */
