@@ -86,10 +86,24 @@ section{
     font-weight: 400;
     transition: 0.3s;
 }
-.menu-area > ul a:hover{
+.menu{
+    width: 441px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-area > ul li a:hover{
     color: #FF5400;
     /* font-weight: bold; */
 }
+input[type=checkbox] {
+    display: none;
+  } 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
 
 /* Hero Section CSS */
 .hero-section{
@@ -133,7 +147,7 @@ section{
     flex-direction: row;
     gap: 5px;
 }
-form > input[type=text] , select , button{
+form > input[type=text] , select {
     width: 24%;
     color: rgba(19, 19, 24, 0.50);
     background-color: #ffffff;
@@ -143,6 +157,11 @@ form > input[type=text] , select , button{
     outline: 0;
 
 }
+
+.btn-form{
+    width: 24%
+}
+
 /* Our Popular Tours */
 .popular-tour-content{
     display: grid;
@@ -165,6 +184,46 @@ form > input[type=text] , select , button{
 .popular-tour-text > button{
     width: 150px;
     margin-top: 30px;
+}
+/* Destination */
+.destination-text{
+    width: 60%;
+    margin:auto;
+    text-align: center;
+}
+
+.destination-grid-area{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+ 
+    gap: 20px;
+    }
+
+.destination-row-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.destination-row-1 img{
+    width: 100%;
+}
+.destination-row-2{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.destination-row-2 img{
+    width: 100%;
+    height: 100%;
+}
+.destination-row-3{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.destination-row-3 img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Why Choose Us */
@@ -191,6 +250,83 @@ form > input[type=text] , select , button{
 .choose-us-card-item:hover{
     background-color: #29cdf618;
 }
+/* Deals */
+.deal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+}
+.deal-text{
+    padding: 10px 100px;
+    text-align: center;
+}
+.deal-details{
+     min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover  ;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deal-details-1{
+    background-image: url('../Images/Group\ 39.png');
+}
+.deal-details-2{
+    background-image: url('../Images/Group\ 40.png');
+}
+.deal-details-3{
+    background-image: url('../Images/Group\ 39.png');
+}
+.deal-details-text{
+    height: 300px;
+    width: 500px;
+    background-color: #ffffffda;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: absolute;
+    right: 50px;
+    
+}
+.deal-details-2 > .deal-details-text{
+    /* height: 300px;
+    width: 500px;
+    background-color: #ffffffb5;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: absolute; */
+    left: 50px;
+    
+}
+.deal-details-location{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* gap: 10px; */
+}
+.deal-details-location > i{
+    color: #FF5400;
+    margin-right: 5px;
+}
+.deal-details-location > p{
+  margin-right: 20px;
+}
+.price{
+    color: #FF5400;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.btn-packag{
+text-align: center;
+}
+
+
+
+
 /* newsletter */
 .newsletter{
     display: flex;
@@ -274,10 +410,45 @@ hr{
 /* Responsive */
 @media screen and (max-width:600px) {
 
-    /* Hero CSS */
+    
     .nav-area{
-        display: none;
+        padding: 30px 20px;
     }
+    .menu {
+       display:none;
+       position: absolute;
+       background-color:rgb(2, 22, 12);
+       top: 80px;
+       right: 0;
+       left: 0;
+       text-align: center;
+       padding: 16px 0;
+      
+     }
+    .menu li a {
+        color: #FF5400;
+        padding: 10px;
+        display: inline-block;
+        
+        transition: 0.3s ease;
+      }
+     
+     .menu li a:hover {
+        color: #FFf;
+        width: 100%;
+        background-color:#4c9e9e;
+        
+      }
+    
+     
+     input[type=checkbox]:checked ~ .menu {
+        display: block;
+       }
+    
+      .hamburger {
+        display: block;
+        }
+/* Hero CSS */
     .hero-section{
         background-size: cover;
         background-position: center;
@@ -312,7 +483,7 @@ hr{
     }
     form > input[type=text] , select , button{
         width: 100%;
-           
+        padding: 20px;
     }
     /* Our Popular Tours */
     .popular-tour-content{
@@ -340,7 +511,23 @@ hr{
     width: 100%;
     padding: 20px 40px;
 }
+/* Deals */
 
+.deal-details{
+           
+    position: relative;
+
+}
+.deal-details-text{
+    height: 300px;
+    width: 500px;
+    background-color: #ffffffda;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 20px;
+    
+}
 /* newsletter */
 .newsletter{
     display: flex;
