@@ -12,7 +12,7 @@ body{
 header, main{
     max-width: 992px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .section-title{
     color: #131318;
@@ -44,6 +44,7 @@ header, main{
     font-weight: 700;
     border: 0;
     outline: 0;
+    cursor: pointer;
 }
 section{
     padding: 60px 0;
@@ -158,7 +159,8 @@ form > input[type=text] , select {
 }
 
 .btn-form{
-    width: 24%
+    width: 24%;
+    cursor: pointer;
 }
 
 /* Our Popular Tours */
@@ -189,6 +191,7 @@ form > input[type=text] , select {
     width: 60%;
     margin: 30px auto;
     text-align: center;
+    
 }
 
 .destination-grid-area{
@@ -262,6 +265,61 @@ form > input[type=text] , select {
 .choose-us-card-item:hover{
     background-color: #29cdf618;
 }
+/* popular */
+.popular-title > h2{
+    border-left: 5px solid #FF5400;
+    padding-left: 8px;
+}
+.see-more{
+    text-align: right;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.popular-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.popular-place-1{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/1.jpg');
+    overflow: hidden;
+}
+.popular-place-2{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/2.jpg');
+}
+.popular-place-3{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/3.jpg');
+}
+.popular-place-4{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/4.jpg');
+}
+.popular-place-5{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/5.jpg');
+}
+.popular-place-6{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.253), rgba(44, 44, 44, 0.322)),url('../Images/6.jpg');
+}
+.item{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+.item:hover{
+    transform: scale(1.05, 1.05);
+}
+
 /* Deals */
 .deal-content{
     display: flex;
@@ -270,7 +328,9 @@ form > input[type=text] , select {
     /* align-items: center; */
 }
 .deal-text{
-    padding: 10px 100px;
+    width: 60%;
+    margin: auto;
+    /* padding: 10px 100px; */
     text-align: center;
 }
 .deal-details{
@@ -329,6 +389,7 @@ form > input[type=text] , select {
 }
 .btn-packag{
 text-align: center;
+cursor: pointer;
 }
 
 
@@ -487,7 +548,7 @@ hr{
         flex-direction: column;
         gap: 15px;
     }
-    form > input[type=text] , select , button{
+    form > input[type=text] , select{
         width: 100%;
         padding: 20px;
     }
@@ -531,9 +592,7 @@ hr{
     grid-template-rows: 300px 300px 300px;
     row-gap: 20px;
 }
-.destination-row-1, .destination-row-2, .destination-row-3 > img{
-     
-}
+
 
 
 /* Why Choose Us */
@@ -556,7 +615,13 @@ hr{
 
 
 /* Deals */
-
+.deal-content{
+    padding: 0 10px;
+}
+.deal-text{
+    width: 90%;
+  
+}
 .deal-details{
            
     position: relative;
@@ -565,12 +630,13 @@ hr{
 .deal-details-text{
     height: 300px;
     width: 500px;
-    background-color: #ffffffda;
-    border-radius: 10px;
     padding: 20px 30px;
     position: absolute;
     bottom: 20px;
     
+}
+.btn-packag{
+    display: none;
 }
 /* newsletter */
 .newsletter{
