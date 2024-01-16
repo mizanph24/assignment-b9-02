@@ -266,6 +266,8 @@ form > input[type=text] , select {
     background-color: #29cdf618;
 }
 /* popular */
+
+
 .popular-title > h2{
     border-left: 5px solid #FF5400;
     padding-left: 8px;
@@ -319,7 +321,26 @@ form > input[type=text] , select {
 .item:hover{
     transform: scale(1.05, 1.05);
 }
-
+/* popular */
+.popular-content{
+    width: 90%;
+    margin: auto;
+}
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.item{
+    height: 200px;
+    width: 250px;
+    
+}
+.see-more{
+    text-align: center;
+    
+}
 /* Deals */
 .deal-content{
     display: flex;
