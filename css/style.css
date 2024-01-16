@@ -635,8 +635,8 @@ hr{
     row-gap: 20px;
 }
 .item{
-    height: 200px;
-    width: 250px;
+    /* height: 40%; */
+    width: 100%;
     
 }
 .see-more{
@@ -653,15 +653,18 @@ hr{
   
 }
 .deal-details{
+
     position: static;
     justify-content: center;
     align-items: end;
     padding-bottom: 20px ;
 }
 .deal-details-text{
-    height: 300px;
-    width: 500px;
-    padding: 20px 30px;
+    position: static;
+    /* height: 300px; */
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 40px;
     /* position: relative; */
     /* bottom: 20px; */
     
