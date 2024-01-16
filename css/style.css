@@ -93,7 +93,7 @@ section{
 
 /* Hero Section CSS */
 .hero-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(255, 255, 255, 0.034)),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(223, 223, 223, 0.151)),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     min-height: 400px;
     background-size: cover;
     background-position: center center;
@@ -121,9 +121,9 @@ section{
     margin: 20px 0;
 }
 .hero-search-area{
-    background-color: #fff;
+    background-color: #ffffff4f;
     padding: 20px;
-    opacity: .5;
+
     border-radius: 8px;
     
 }
@@ -136,7 +136,7 @@ section{
 form > input[type=text] , select , button{
     width: 24%;
     color: rgba(19, 19, 24, 0.50);
-    background-color: #ff0000;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 10px;
     border: 0;
@@ -239,7 +239,38 @@ form > input[type=text] , select , button{
     transform: rotate(-23deg);
 }
 
+/* footer */
+footer{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: rgba(19, 19, 24, 0.05);   ;
+}
+.footer-content{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+   .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 800;
+   } 
+   .footer-logo > h2 > span{
+    color: #FF5400;
+   }
+   .footer-content > p{
+    padding: 0 50px;
+   }
 
+hr{
+    border: 1px solid rgb(224, 224, 224);
+}
 /* Responsive */
 @media screen and (max-width:600px) {
 
@@ -328,4 +359,21 @@ form > input[type=text] , select , button{
     margin: auto;
     
 }
+.newsletter .newsletter-image .saveup{
+    right: 14px;
+ 
+}
+
+footer{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgba(19, 19, 24, 0.05);   ;
+}
+.footer-content{
+    width: 90%;
+    
+    }
+.footer-content > p{
+    padding: 0 10px;
+   }
 }
