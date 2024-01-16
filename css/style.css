@@ -321,26 +321,7 @@ form > input[type=text] , select {
 .item:hover{
     transform: scale(1.05, 1.05);
 }
-/* popular */
-.popular-content{
-    width: 90%;
-    margin: auto;
-}
-.popular-items{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    row-gap: 20px;
-}
-.item{
-    height: 200px;
-    width: 250px;
-    
-}
-.see-more{
-    text-align: center;
-    
-}
+
 /* Deals */
 .deal-content{
     display: flex;
@@ -642,6 +623,26 @@ hr{
     padding: 20px 40px;
 }
 
+/* popular */
+.popular-content{
+    width: 90%;
+    margin: auto;
+}
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.item{
+    height: 200px;
+    width: 250px;
+    
+}
+.see-more{
+    text-align: center;
+    
+}
 
 /* Deals */
 .deal-content{
