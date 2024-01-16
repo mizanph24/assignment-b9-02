@@ -385,9 +385,7 @@ form > input[type=text] , select {
     
 }
 .deal-details-2 > .deal-details-text{
-    
     left: 50px;
-    
 }
 .deal-details-location{
     display: flex;
@@ -516,7 +514,7 @@ hr{
     .menu {
        display:none;
        position: absolute;
-       background-color:rgb(2, 22, 12);
+       background-color:rgb(14, 53, 33);
        top: 80px;
        /* right: 0; */
        left: 0;
@@ -654,16 +652,17 @@ hr{
   
 }
 .deal-details{
-           
-    position: relative;
-
+    position: static;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px ;
 }
 .deal-details-text{
     height: 300px;
     width: 500px;
     padding: 20px 30px;
-    position: absolute;
-    bottom: 20px;
+    /* position: relative; */
+    /* bottom: 20px; */
     
 }
 .btn-packag{
